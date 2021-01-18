@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    @include('templates.partials._head')
   </head>
   <body>
+
+	  @include('templates.partials._nav')
+    <!-- END nav -->
+
+    @include('templates.partials._hero')
+
+   @include('templates.partials._main')
+
+    @include('templates.partials._footer')
+
+
+
+  <!-- loader -->
+  @include('templates.partials._loader')
+
+
+  @include('templates.partials._scripts')
 
   </body>
 </html>
