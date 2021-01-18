@@ -2,11 +2,12 @@
 
 namespace App\Models;
 
+
 use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-    use HasFactory;
+    // use HasFactory;
 
     /**
      * GETTER du auteur à qui appartient ce post.

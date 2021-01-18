@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Auteur extends Model
 {
 
-    use HasFactory;
+    // use HasFactory;
 
     /**
      * GETTER des posts du auteur.
