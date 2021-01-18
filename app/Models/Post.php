@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-
 use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
@@ -12,8 +11,8 @@ class Post extends Model
     /**
      * GETTER du auteur à qui appartient ce post.
      */
-    public function auteur(){
-        return $this->belongsTo('App\Models\Auteur');
+    public function author(){
+        return $this->belongsTo('App\Models\Author');
     }
 
     /**

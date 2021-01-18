@@ -16,24 +16,12 @@
 
   <h1 class="mb-3 h1">{{ $post->title }}</h1>
   <div class="">{!! $post->content !!}</div>
-  <div class="tag-widget post-tag-container mb-5 mt-5">
-    <div class="tagcloud">
-      <a href="#" class="tag-cloud-link">Life</a>
-      <a href="#" class="tag-cloud-link">Sport</a>
-      <a href="#" class="tag-cloud-link">Tech</a>
-      <a href="#" class="tag-cloud-link">Travel</a>
-    </div>
-  </div>
 
-  <div class="about-author d-flex p-4 bg-light">
-    <div class="bio mr-5">
-      <img src="images/person_1.jpg" alt="Image placeholder" class="img-fluid mb-4">
-    </div>
-    <div class="desc">
-      <h3>George Washington</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
-    </div>
-  </div>
+  {{-- Les tags du post --}}
+  @include('tags._post_tags', ['tags'=> $post->tags])
+
+  {{-- L'auteur du post --}}
+  @include('authors._post_author', ['author' => $post->author])
 
 
   <div class="pt-5 mt-5">
